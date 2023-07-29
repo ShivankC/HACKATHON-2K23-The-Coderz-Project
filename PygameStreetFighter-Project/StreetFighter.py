@@ -1,3 +1,6 @@
+# Pls note a few requirements to run this code
+# Change image paths to what ever image path the image occupies on your system. On mine it shows the currently set paths. To copy the image paths on windows, right click on the image in file explorer and select copy image path. On mac, right click on the image in finder and then press option to view the copy image as pathname option.
+
 import pygame
 import moviepy
 from moviepy.editor import *
@@ -142,6 +145,20 @@ run = True
 while run:
     screen.blit(Background, (0, 0))
     screen.blit(Ground, (0, 0))
+
+    if Player1_x < 95: 
+        Player1_x = 95
+    if Player1_x + 153 > 1125:
+        Player1_x = 1125 - 153
+    if Player1_y < 120:
+        Player1_y = 120
+
+    if Player2_x < 95: 
+        Player2_x = 95
+    if Player2_x + 153 > 1125:
+        Player2_x = 1125 - 153
+    if Player2_y < 120:
+        Player2_y = 120
 
     if Player1_action == "jump":
         Player1_on_ground = False
