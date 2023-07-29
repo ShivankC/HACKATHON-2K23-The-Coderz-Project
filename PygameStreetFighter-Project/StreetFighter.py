@@ -148,15 +148,15 @@ while run:
 
     if Player1_x < 95: 
         Player1_x = 95
-    if Player1_x + 153 > 1125:
-        Player1_x = 1125 - 153
+    if Player1_x + 100 > 1125:
+        Player1_x = 1125 - 100
     if Player1_y < 120:
         Player1_y = 120
 
     if Player2_x < 95: 
         Player2_x = 95
-    if Player2_x + 153 > 1125:
-        Player2_x = 1125 - 153
+    if Player2_x + 100 > 1125:
+        Player2_x = 1125 - 100
     if Player2_y < 120:
         Player2_y = 120
 
